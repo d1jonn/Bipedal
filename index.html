@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bipedal Fashion - Home</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body { font-family: "Lato", sans-serif; }
+    .mySlides { display: none; }
+  </style>
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+    <a href="service.html" class="w3-bar-item w3-button w3-padding-large">SERVICE</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+  </div>
+</div>
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <h2 style="text-align: center;">HOME</h2>
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="bipedal.jpg" width="800" height="650">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="5DC47FC8-CB9C-4E40-8166-F97971EF43BA.PNG" width:="800" height="650">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="IMG_4499.jpeg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+       
+    </div>
+  </div>
+
+  
+    </p>
+  </footer>
+
+  <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1; }
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 4000);    
+    }
+  </script>
+
+</body>
+</html>
